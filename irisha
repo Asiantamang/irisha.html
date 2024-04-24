@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="travel.css" />
+    <title>Web Design Mastery | Travel.co</title>
+</head>
+
+<body>
+    <header>
+        <div class="section__container">
+            <div class="header__content">
+                <h1>Travel</h1>
+                <p>
+                    Embark on a journey of a lifetime and explore the world's most
+                    breathtaking destinations with our expert travel advice. From exotic
+                    beaches to cultural wonders, we've got you covered with our
+                    comprehensive travel guides and insider tips.
+                </p>
+                <button>Read more</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="journey__container">
+        <div class="section__container">
+            <h2 class="section__title">Start Your Journey</h2>
+            <p class="section__subtitle">The most searched countries in April</p>
+            <div class="journey__grid">
+                <div class="country__card">
+                    <img src="https://th.bing.com/th/id/OIP.3ASDz4DPauNHixiuNnUdxQHaEo?rs=1&pid=ImgDetMain"
+                        alt="country" />
+                    <div class="country__name">
+                        <span>China</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="https://th.bing.com/th/id/OIP.wOgfNymmesMQ74fKxOXqhgAAAA?rs=1&pid=ImgDetMain" alt="country" />
+                    <div class="country__name">
+                        <span>France</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="https://th.bing.com/th/id/R.32b77d9ca360384fa81c8f8e8f6037c8?rik=r1khwyhePWdW8w&pid=ImgRaw&r=0" alt="country" />
+                    <div class="country__name">
+                        <span>Nepal</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="https://i.pinimg.com/originals/a2/e1/33/a2e133b3a98cfc2788f5fc907a359fc8.jpg" alt="country" />
+                    <div class="country__name">
+                        <span>America</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="https://th.bing.com/th/id/OIP.RheLQNdLqNU4ykbx7dzMUQHaEK?rs=1&pid=ImgDetMain" alt="country" />
+                    <div class="country__name">
+                        <span>Canada</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="https://th.bing.com/th/id/R.f7abc059189fd9307120f18052514672?rik=7k2Pw1h2UhaMGQ&pid=ImgRaw&r=0" alt="country" />
+                    <div class="country__name">
+                        <span>India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner__container">
+        <div class="section__container">
+            <div class="banner__content">
+                <h2>Discount 10-30% Off</h2>
+                <p>
+                    Travel the world on a budget with our unbeatable discounted travel
+                    deals. Whether you're looking for a last-minute escape or planning
+                    ahead, we've got you covered with incredible discounts on flights,
+                    hotels, and packages. Don't wait, book now and experience the
+                    adventure of a lifetime without breaking the bank.
+                </p>
+                <button>See Tours</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+and css
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  padding: 5rem 1rem;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section__subtitle {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo a {
+  text-decoration: none;
+  color: var(--extra-light);
+  font-size: 1.5rem;
+}
+
+.nav__links {
+  display: none;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(45, 92, 132, 0.5),
+      rgba(45, 92, 132, 0.5)
+    ),
+    url("https://th.bing.com/th/id/R.a827b458b4e81de2f9069caf4a7f99cf?rik=eVg3dKNXzSeboQ&pid=ImgRaw&r=0");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .section__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__content h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 5rem;
+}
+
+.header__content p {
+  text-align: center;
+}
+
+.header__content button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: color #ff0dbf;;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header__content button:hover {
+  background-color: yellow;
+}
+
+.journey__container {
+  background-color: greenyellow;
+}
+
+.journey__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.country__card {
+  background-color: rgb(255, 0, 0);
+}
+
+.country__name i {
+  font-size: 1.2rem;
+}
+
+.country__name span {
+  font-style: italic;
+}
